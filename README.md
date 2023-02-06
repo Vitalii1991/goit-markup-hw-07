@@ -1,1 +1,1 @@
-# goit-markup-hw-07
+# HOMEWORK 7
