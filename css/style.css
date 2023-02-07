@@ -726,8 +726,7 @@ img {
   background-position: center;
 }
 .form-checkbox:focus + .form-accept::before {
-  outline: 1.25px solid var(--accent-color);
-  border-color: transparent;
+  border-color: var(--accent-color);
 }
 .privacy-police-link {
   margin-left: 3px;
