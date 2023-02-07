@@ -726,7 +726,7 @@ img {
   background-position: center;
 }
 .form-checkbox:focus + .form-accept::before {
-  border-color: var(--accent-color);
+  border: 2.5px solid #2E2F42;
 }
 .privacy-police-link {
   margin-left: 3px;
