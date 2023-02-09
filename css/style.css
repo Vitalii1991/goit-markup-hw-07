@@ -25,6 +25,24 @@ body {
   margin-left: auto;
   padding-right: 12px;
   padding-left: 12px;
+
+  outline: 1px solid red;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 428px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1152px;
+  }
 }
 .list {
   margin: 0;
@@ -223,6 +241,11 @@ img {
   
   background-color: #F4F4FD;
   border-radius: 4px;
+}
+@media screen and (max-width: 767px) {
+  .features-icon {
+    display: none;
+  }
 }
 .features-title {
   margin-top: 0;
