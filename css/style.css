@@ -10,8 +10,8 @@
 }
 body {
   background-color: #ffffff;
-  color: var(--primary-text-color);
 
+  color: var(--primary-text-color);
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -19,12 +19,10 @@ body {
   letter-spacing: 0.02em;
 }
 .container {
-  width: 428px;
-
   margin-right: auto;
   margin-left: auto;
-  /* padding-right: 12px;
-  padding-left: 12px; */
+  padding-right: 12px;
+  padding-left: 12px;
 
   outline: 1px solid red;
 }
@@ -150,38 +148,34 @@ img {
   text-align: center;
 }
 .overlay {
-  max-width: 1440px;
-  height: 600px;
+  max-width: 428px;
+
   margin-right: auto;
   margin-left: auto;
-  padding-top: 188px;
-  padding-bottom: 188px;
+  padding-top: 112px;
+  padding-bottom: 112px;
 
   background-image: linear-gradient(
   to right,
   rgba(46, 47, 66, 0.7),
   rgba(46, 47, 66, 0.7)),
-  url("../images/hero-background.jpg");
+  url("../images/hero-bg-mobile.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-color: grey;
 }
 .hero-title {
-  width: 494px;
-  margin-top: 0;
-  margin-bottom: 48px;
-  margin-right: auto;
-  margin-left: auto;
+  max-width: 320px;
+
+  margin: 0 auto 72px;
 
   color: #ffffff;
-  font-weight: 700;
-  font-size: 56px;
-  line-height: 1.07;
 }
 .hero-btn {
   min-width: 169px;
   height: 56px;
+
   padding: 16px 32px;
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -197,10 +191,6 @@ img {
 
 /* ----- Features ----- */
 
-.features > .container {
-  padding-right: 12px;
-  padding-left: 12px;
-}
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -344,7 +334,7 @@ img {
 }
 .customers-link {
   display: flex;
-  min-width: 190px;
+  width: 190px;
   height: 88px;
 
   justify-content: center;
@@ -371,8 +361,6 @@ img {
   background-color: var(--title-text-color);
 }
 .short-description {
-  padding-right: 80px;
-  padding-left: 80px;
   margin-bottom: 72px;
 }
 .footer-logo {
@@ -385,7 +373,7 @@ img {
 }
 .footer-text {
   max-width: 268px;
-  margin: 0;
+  margin: 0 auto;
 
   color: #e7e9fc;
 }
@@ -394,11 +382,11 @@ img {
   gap: 16px;
 }
 .social-network {
-  /* max-width: 208px; */
   width: 100%;
-  padding-right: 110px;
-  padding-left: 110px;
   margin-bottom: 72px;
+}
+.social-list.footer {
+  justify-content: center;
 }
 .social-title {
   margin-top: 0;
@@ -605,9 +593,9 @@ img {
   left: 50%;
   transform: translate(-50%, -50%) rotate(0);
 
-  width: 408px;
-  height: 584px;
-  padding: 72px 24px 24px;
+  width: 392px;
+  height: 586px;
+  padding: 72px 16px 24px;
   transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
 
   background: #fcfcfc;
@@ -770,4 +758,176 @@ img {
 }
 .form-btn:is(:hover, :focus) {
   background-color: var(--selection-color);
+}
+
+/* ----- Media rules ----- */
+
+/* ----- Mobile ----- */
+
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 428px;
+  }
+}
+
+/* ----- Tablet ----- */
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+
+  .header-logo {
+    margin-right: 123px;
+  }
+  .contacts-list {
+    display: block;
+    margin-top: 24px;
+  }
+  .contacts-item.tablet {
+    margin: 0;
+  }
+  .contacts-link {
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.04em;
+  }
+  .contacts-item:not(:last-child) {
+    margin-bottom: 4px;
+  }
+  .header .container {
+    height: 70px;
+    align-items: normal;
+  }
+
+  .overlay {
+    max-width: 768px;
+  
+    background-image: linear-gradient(
+    to right,
+    rgba(46, 47, 66, 0.7),
+    rgba(46, 47, 66, 0.7)),
+    url("../images/hero-bg-tablet.jpg");
+  }
+  .hero-title {
+    max-width: 496px;
+    margin: 0 auto 40px;
+
+    font-size: 56px;
+    line-height: 1.07;
+  }
+
+  .features-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 72px 24px
+  }
+  .features-item.tablet {
+    margin: 0;
+  }
+  .features-item {
+    width: calc((100% - 24px) / 2);
+  }
+  .features-title {
+    text-align: start;
+  }
+
+  .modal {
+    width: 408px;
+    height: 586px;
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+
+  .team-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 64px 24px;
+  }
+  .team-item.tablet {
+    margin: 0;
+  }
+  .team-item {
+    max-width: 264px;
+  }
+
+  .customers-list {
+    gap: 72px 24px;
+    justify-content: center;
+  }
+  .customers-link {
+    width: 168px;
+  }
+
+  .footer .container {
+    padding-right: 164px;
+    padding-left: 108px;
+  }
+  .container-tablet {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 72px;
+  }
+  .short-description {
+    width: 264px;
+    margin: 0;
+  }
+  .social-network {
+    width: calc(100% - 288px);
+    margin: 0;
+  }
+  .footer-logo {
+    text-align: start;
+  }
+  .social-title {
+    text-align: start;
+  }
+  .form-footer {
+    padding: 0;
+  }
+  .form-footer-title {
+    text-align: start;
+  }
+  .form-field-footer {
+    display: flex;
+    justify-content: start;
+    gap: 24px;
+  }
+  .form-input-footer {
+    width: 264px;
+  }
+  .form-btn.footer {
+    margin: 0;
+  }
+}
+
+/* ----- Desktop ----- */
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1152px;
+  }
+  .overlay {
+    max-width: 1440px;
+
+    padding-top: 188px;
+    padding-bottom: 188px;
+  
+    background-image: linear-gradient(
+    to right,
+    rgba(46, 47, 66, 0.7),
+    rgba(46, 47, 66, 0.7)),
+    url("../images/hero-bg-desktop.jpg");
+  }
+  .hero-title {
+    max-width: 496px;
+
+    margin: 0 auto 48px;
+
+    font-size: 56px;
+    line-height: 1.07;
+  }
 }
