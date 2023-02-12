@@ -69,21 +69,8 @@
 
   /* ----- Team ----- */
 
-  .team > .container {
-    padding-right: 108px;
-    padding-left: 108px;
-  }
   .team-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
     gap: 64px 24px;
-  }
-  .team-item.tablet {
-    margin: 0;
-  }
-  .team-item {
-    max-width: 264px;
   }
 
   /* ----- Customers ----- */
