@@ -758,13 +758,3 @@ img {
 .form-btn:is(:hover, :focus) {
   background-color: var(--selection-color);
 }
-
-/* ----- Media rules ----- */
-
-/* ----- Mobile ----- */
-
-@media screen and (min-width: 480px) {
-  .container {
-    max-width: 428px;
-  }
-}
