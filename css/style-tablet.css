@@ -1,0 +1,149 @@
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+
+  /* ----- Top Line ----- */
+
+  .header-logo {
+    margin-right: 123px;
+  }
+  .contacts-list {
+    display: block;
+    margin-top: 24px;
+  }
+  .contacts-item.tablet {
+    margin: 0;
+  }
+  .contacts-link {
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.04em;
+  }
+  .contacts-item:not(:last-child) {
+    margin-bottom: 4px;
+  }
+  .header .container {
+    height: 70px;
+    align-items: normal;
+  }
+
+  /* ----- Hero ----- */
+
+  .overlay {
+    max-width: 768px;
+
+    background-image: linear-gradient(
+        to right,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/hero-bg-tablet.jpg");
+  }
+  .hero-title {
+    max-width: 496px;
+    margin: 0 auto 40px;
+
+    font-size: 56px;
+    line-height: 1.07;
+  }
+
+  /* ----- Features ----- */
+
+  .features-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 72px 24px;
+  }
+  .features-item.tablet {
+    margin: 0;
+  }
+  .features-item {
+    width: calc((100% - 24px) / 2);
+  }
+  .features-title {
+    text-align: start;
+  }
+
+  /* ----- Team ----- */
+
+  .team-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 64px 24px;
+  }
+  .team-item.tablet {
+    margin: 0;
+  }
+  .team-item {
+    max-width: 264px;
+  }
+
+  /* ----- Customers ----- */
+
+  .customers-list {
+    gap: 72px 24px;
+    justify-content: center;
+  }
+  .customers-link {
+    width: 168px;
+  }
+
+  /* ----- Footer ----- */
+
+  .footer .container {
+    padding-right: 164px;
+    padding-left: 108px;
+  }
+  .container-tablet {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 72px;
+  }
+  .short-description {
+    width: 264px;
+    margin: 0;
+  }
+  .social-network {
+    width: calc(100% - 288px);
+    margin: 0;
+  }
+  .footer-logo {
+    text-align: start;
+  }
+  .social-title {
+    text-align: start;
+  }
+
+  /* ----- Footer form ----- */
+
+  .form-footer {
+    padding: 0;
+  }
+  .form-footer-title {
+    text-align: start;
+  }
+  .form-field-footer {
+    display: flex;
+    justify-content: start;
+    gap: 24px;
+  }
+  .form-input-footer {
+    width: 264px;
+  }
+  .form-btn.footer {
+    margin: 0;
+  }
+
+  /* ----- Modal window ----- */
+
+  .modal {
+    width: 408px;
+    height: 586px;
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+}

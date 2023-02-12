@@ -1,0 +1,42 @@
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1152px;
+  }
+
+  /* ----- Hero ----- */
+
+  .overlay {
+    max-width: 1440px;
+
+    padding-top: 188px;
+    padding-bottom: 188px;
+
+    background-image: linear-gradient(
+        to right,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/hero-bg-desktop.jpg");
+  }
+  .hero-title {
+    max-width: 496px;
+
+    margin: 0 auto 48px;
+
+    font-size: 56px;
+    line-height: 1.07;
+  }
+
+  /* ----- Features ----- */
+
+  .features-icon {
+    display: block;
+  }
+
+  /* ----- Occupation ----- */
+
+  .occupation {
+    display: block;
+    padding-top: 0;
+  }
+}
