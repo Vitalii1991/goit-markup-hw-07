@@ -69,6 +69,10 @@
 
   /* ----- Team ----- */
 
+  .team > .container {
+    padding-right: 108px;
+    padding-left: 108px;
+  }
   .team-list {
     display: flex;
     flex-wrap: wrap;
