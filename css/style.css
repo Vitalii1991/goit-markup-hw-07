@@ -21,8 +21,8 @@ body {
 .container {
   margin-right: auto;
   margin-left: auto;
-  padding-right: 12px;
-  padding-left: 12px;
+  padding-right: 16px;
+  padding-left: 16px;
 
   outline: 1px solid red;
 }
@@ -205,8 +205,10 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-.features-item:not(:last-child) {
-  margin-bottom: 72px;
+.features-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 72px;
 }
 .features-icon {
   display: none;
@@ -318,10 +320,6 @@ img {
 .customers {
   text-align: center;
 }
-.customers > .container {
-  padding-right: 16px;
-  padding-left: 16px;
-}
 .customers-title {
   margin-top: 0;
   margin-bottom: 72px;
@@ -358,10 +356,6 @@ img {
 
 .footer {
   background-color: var(--title-text-color);
-}
-.footer > .container {
-  padding-right: 15px;
-  padding-left: 15px;
 }
 .short-description {
   margin-bottom: 72px;

@@ -1,8 +1,6 @@
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
-    padding-right: 16px;
-    padding-left: 16px;
   }
 
   /* ----- Top Line ----- */
@@ -34,6 +32,7 @@
 
   .overlay {
     max-width: 768px;
+    padding-bottom: 108px;
 
     background-image: linear-gradient(
         to right,
@@ -53,12 +52,7 @@
   /* ----- Features ----- */
 
   .features-list {
-    display: flex;
-    flex-wrap: wrap;
     gap: 72px 24px;
-  }
-  .features-item.tablet {
-    margin: 0;
   }
   .features-item {
     width: calc((100% - 24px) / 2);
@@ -66,9 +60,15 @@
   .features-title {
     text-align: start;
   }
+  .features-text {
+    max-width: 351px;
+  }
 
   /* ----- Team ----- */
 
+  .team {
+    padding-bottom: 104px;
+  }
   .team-list {
     gap: 64px 24px;
   }
@@ -85,7 +85,7 @@
 
   /* ----- Footer ----- */
 
-  .footer .container {
+  .footer > .container {
     padding-right: 164px;
     padding-left: 108px;
   }
@@ -99,7 +99,7 @@
     margin: 0;
   }
   .social-network {
-    width: calc(100% - 288px);
+    width:  208px;
     margin: 0;
   }
   .footer-logo {
