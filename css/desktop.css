@@ -86,4 +86,22 @@
     margin-right: 80px;
     margin-bottom: 0;
   }
+
+  /* +++++ Porfolio Style +++++ */
+
+  /* ----- Projects ----- */
+
+  .projects {
+    padding-top: 96px;
+    padding-bottom: 120px;
+  }
+  .projects-filter-list {
+    margin-bottom: 72px;
+  }
+  .projects-list {
+    gap: 48px 24px;
+  }
+  .projects-card-item {
+    width: calc((100% - 48px) / 3);
+  }
 }
