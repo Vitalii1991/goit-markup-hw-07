@@ -31,14 +31,23 @@
     font-size: 56px;
     line-height: 1.07;
   }
-  .features-text {
-    font-weight: 400;
+  .hero-btn:is(:hover, :focus) {
+    background-color: var(--selection-color);
   }
 
   /* ----- Features ----- */
 
   .features-icon {
     display: flex;
+    width: 264px;
+    height: 112px;
+    margin-bottom: 8px;
+  
+    justify-content: center;
+    align-items: center;
+  
+    background-color: #f4f4fd;
+    border-radius: 4px;
   }
   .features-list {
     gap: 24px;
@@ -51,11 +60,17 @@
     font-size: 20px;
     line-height: 1.2;
   }
+  .features-text {
+    font-weight: 400;
+  }
 
    /* ----- Team ----- */
 
   .team-list {
     gap: 24px;
+  }
+  .social-link:is(:hover, :focus) {
+    background-color: var(--selection-color);
   }
 
   /* ----- Customers ----- */
@@ -63,12 +78,25 @@
   .customers-list {
     gap: 24px;
   }
+  .customers-link:is(:hover, :focus) {
+    color: var(--selection-color);
+    border-color: var(--selection-color);
+  }
 
   /* ----- Occupation ----- */
 
   .occupation {
     display: block;
     padding-top: 0;
+    text-align: center;
+  }
+  .occupation-title {
+    margin-top: 0;
+    margin-bottom: 72px;
+  }
+  .occupation-list {
+    display: flex;
+    justify-content: space-between;
   }
   
   /* ----- Footer ----- */
@@ -85,6 +113,9 @@
     gap: 120px;
     margin-right: 80px;
     margin-bottom: 0;
+  }
+  .social-network .social-link:is(:hover, :focus) {
+    background-color: #31d0aa;
   }
 
   /* +++++ Porfolio Style +++++ */
