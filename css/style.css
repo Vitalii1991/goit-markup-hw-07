@@ -166,6 +166,18 @@ img {
   background-size: cover;
   background-color: grey;
 }
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    .overlay {
+      background-image: linear-gradient(
+      to right,
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url("../images/hero-bg-mobile-2x.jpg");
+  }
+}
 .hero-title {
   max-width: 320px;
 

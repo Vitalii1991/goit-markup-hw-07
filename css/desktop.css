@@ -11,26 +11,6 @@
 
   /* ----- Hero ----- */
 
-  .overlay {
-    max-width: 1440px;
-
-    padding-top: 188px;
-    padding-bottom: 188px;
-
-    background-image: linear-gradient(
-        to right,
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url("../images/hero-bg-desktop.jpg");
-  }
-  .hero-title {
-    max-width: 496px;
-    margin: 0 auto 48px;
-
-    font-size: 56px;
-    line-height: 1.07;
-  }
   .hero-btn:is(:hover, :focus) {
     background-color: var(--selection-color);
   }
