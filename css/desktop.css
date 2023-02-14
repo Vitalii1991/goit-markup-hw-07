@@ -9,6 +9,34 @@
     padding-bottom: 120px;
   }
 
+   /* ----- Top Line ----- */
+
+  .header .container {
+    height: 76px;
+    align-items: center;
+  }
+  .header-logo {
+    margin-right: 76px;
+  }
+  .current::after {
+    top: 71px;
+  }
+  .header-link:is(:hover, :focus),
+  .header-link.current {
+    color: var(--selection-color);
+  }
+  .contacts-list {
+    display: flex;
+    gap: 40px;
+    margin: 0;
+  }
+  .contacts-list > .contacts-item {
+    margin: 0;
+  }
+  .contacts-link:is(:hover, :focus) {
+    color: var(--selection-color);
+  }
+
   /* ----- Hero ----- */
 
   .hero-btn:is(:hover, :focus) {
