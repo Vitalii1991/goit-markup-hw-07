@@ -5,6 +5,9 @@
 
   /* ----- Top Line ----- */
 
+  .header .container {
+    align-items: normal;
+  }
   .header-logo {
     margin-right: 123px;
   }
@@ -53,6 +56,9 @@
     font-size: 12px;
     line-height: 1.33;
     letter-spacing: 0.04em;
+  }
+  .open-menu-btn {
+    display: none;
   }
   
 

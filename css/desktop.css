@@ -36,6 +36,9 @@
   .contacts-link:is(:hover, :focus) {
     color: var(--selection-color);
   }
+  .open-menu-btn {
+    display: none;
+  }
 
   /* ----- Hero ----- */
 
