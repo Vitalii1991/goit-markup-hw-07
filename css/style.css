@@ -112,32 +112,53 @@ img {
 
 .mob-menu {
   position: fixed;
+  top: 0;
+  left: 0;
+
   width: 100%;
-  height: 100%;
+  height: 100vh;
+  padding: 80px 40px 40px;
 
   background-color: #fff;
 }
-.mob-menu-list {
+.mob-menu-nav {
+  margin-bottom: 284px;
 }
-.mob-menu-item {
+.mob-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 .mob-menu-link {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+}
+.mob-menu-link:focus {
+  color: var(--selection-color);
 }
 .mob-contacts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-bottom: 48px;
 }
-.mob-contacts-item {
+.mob-contacts-link {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
 }
-.mob-mail-link {
+.mob-contacts-link:focus {
+  color: var(--accent-color);
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 1.1;
 }
-.mob-tel-link {
+.social-list.mobile {
+  gap: 56px;
 }
-.social-list {
-}
-.social-item {
-}
-.social-link {
-}
-
 
 /* ----- Hero ----- */
 
