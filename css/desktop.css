@@ -21,8 +21,10 @@
   .current::after {
     top: 71px;
   }
-  .header-link:is(:hover, :focus),
-  .header-link.current {
+  .header-link {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .header-link:is(:hover, :focus) {
     color: var(--selection-color);
   }
   .contacts-list {
