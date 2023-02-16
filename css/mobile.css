@@ -2,6 +2,15 @@
   .container {
     max-width: 428px;
   }
+
+  /* ----- Mobile menu ----- */
+
+  .mob-contacts-link:focus {
+    font-size: 36px;
+  }
+
+  /* ----- Hero ----- */
+
   .overlay {
     max-width: 768px;
 
@@ -33,6 +42,9 @@
     font-size: 56px;
     line-height: 1.07;
   }
+
+  /* ----- Modal window ----- */
+
   .modal {
     width: 392px;
   }

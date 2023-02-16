@@ -208,7 +208,7 @@ img {
 .mob-contacts-link:focus {
   color: var(--accent-color);
   font-weight: 600;
-  font-size: 36px;
+  font-size: 26px;
   line-height: 1.1;
 }
 .social-list.mobile {
