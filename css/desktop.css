@@ -33,6 +33,11 @@
   .contacts-list > .contacts-item {
     margin: 0;
   }
+  .contacts-link {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
   .contacts-link:is(:hover, :focus) {
     color: var(--selection-color);
   }
