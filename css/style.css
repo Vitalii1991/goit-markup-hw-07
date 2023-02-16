@@ -71,6 +71,7 @@ img {
 /* ----- Top Line ----- */
 
 .header {
+  position: relative;
   border-bottom: 1px solid #e7e9fc;
 }
 .header .container {
@@ -106,6 +107,37 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+/* ----- Mobile menu ----- */
+
+.mob-menu {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+
+  background-color: #fff;
+}
+.mob-menu-list {
+}
+.mob-menu-item {
+}
+.mob-menu-link {
+}
+.mob-contacts-list {
+}
+.mob-contacts-item {
+}
+.mob-mail-link {
+}
+.mob-tel-link {
+}
+.social-list {
+}
+.social-item {
+}
+.social-link {
+}
+
 
 /* ----- Hero ----- */
 
