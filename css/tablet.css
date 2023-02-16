@@ -60,6 +60,9 @@
   .open-menu-btn {
     display: none;
   }
+  .mob-menu {
+    display: none;
+  }
   
 
   /* ----- Hero ----- */
