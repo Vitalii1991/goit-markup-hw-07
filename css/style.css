@@ -121,8 +121,13 @@ img {
   background-color: #fff;
 }
 .mob-container {
-  width: 428px;
-  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow-y: auto;
+
+  max-width: 428px;
+  height: 100%;
   padding: 24px 24px 40px 40px;
 }
 .mob-btn-close {
@@ -150,7 +155,7 @@ img {
   fill: currentColor;
 }
 .mob-menu-nav {
-  margin-bottom: 284px;
+  margin-bottom: 40px;
 }
 .mob-menu-list {
   display: flex;
@@ -185,7 +190,7 @@ img {
   line-height: 1.1;
 }
 .social-list.mobile {
-  gap: 56px;
+  justify-content: space-between;
 }
 
 /* ----- Hero ----- */
