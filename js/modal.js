@@ -14,8 +14,21 @@
     }
   });
 
+  const keydownHandler = (event) => {
+    console.log("keydown event occurred");
+    if (event.key === "Escape") {
+      toggleModal();
+    }
+  };
+
   function toggleModal() {
     refs.modal.classList.toggle("is-hidden");
     refs.body.classList.toggle("no-scroll");
+
+    if (refs.modal.classList.contains("is-hidden")) {
+      window.removeEventListener("keydown", keydownHandler);
+    } else {
+      window.addEventListener("keydown", keydownHandler);
+    }
   }
 })();
