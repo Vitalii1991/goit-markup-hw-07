@@ -15,8 +15,8 @@
   });
 
   const keydownHandler = (event) => {
-    console.log("keydown event occurred");
-    if (event.key === "Escape") {
+    console.log(event.code);
+    if (event.code === "Escape") {
       toggleModal();
     }
   };
